@@ -1,12 +1,10 @@
-import './App.scss';
-import Header from '@Components/Header';
+import { RouterProvider } from 'react-router-dom';
+
+import AppRoutes from '@Src/app/routes';
 
 function App() {
   return (
-    <div className="app-container">
-      <h1>This is rock paper scissor game</h1>
-      <Header/>
-    </div>
+    <RouterProvider router={AppRoutes} />
   );
 }
 

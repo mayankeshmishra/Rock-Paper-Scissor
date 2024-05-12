@@ -4,7 +4,7 @@
       "paths": {
         "@Src/*": ["./src/*"],
         "@Components/*": ["./src/app/components/*"],
-        "@Pages/*": ["./src/app/pages/*"],
+        "@Layouts/*": ["./src/app/layouts/*"],
         "@Hooks/*": ["./src/hooks/*"],
         "@Images/*": ["./src/assets/images/*"],
         "@Constants/*": ["./src/constants/*"]
