@@ -1,9 +1,10 @@
-import { createBrowserRouter, Router } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 import AppLayout from "@Layouts/appLayout/AppLayout";
 import Leaderboard from "@Components/Leaderboard/LeaderBoard";
 import PlayerList from "@Components/PlayerList/PlayerList";
 import Game from "@Components/Game/Game";
+import RegisterPlayer from "@Components/RegisterPlayer/RegisterPlayer";
 
 const AppRoutes = createBrowserRouter([{
     path: '/',
@@ -11,7 +12,7 @@ const AppRoutes = createBrowserRouter([{
     children: [
         {
             path: '/',
-            element: <PlayerList />
+            element: <RegisterPlayer />
         },
         {
             path: '/players',

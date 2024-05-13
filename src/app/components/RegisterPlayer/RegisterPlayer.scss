@@ -1,0 +1,43 @@
+.register {
+    margin-top: 300px;
+
+
+    &__title {
+        color: $WHITE;
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__field {
+        background-color: transparent;
+        border: 2px solid $WHITE;
+        min-height: 60px;
+        min-width: 60%;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 0 12px;
+        color: $WHITE;
+        font-size: 24px;
+
+        &::placeholder {
+            color: $PALE_LAVENDER_SWEET;
+        }
+    }
+
+    &__button {
+        min-height: 60px;
+        background-color: $WHITE;
+        border: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 0 24px;
+        font-size: 24px;
+    }
+}

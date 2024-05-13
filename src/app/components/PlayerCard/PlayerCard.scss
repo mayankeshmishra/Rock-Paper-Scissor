@@ -1,0 +1,22 @@
+.player-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $WHITE;
+    padding: 12px 24px;
+    width: 100%;
+    border-radius: 8px;
+
+    &__name {
+        font-size: 20px;
+    }
+
+    &__action {
+        background-color: $COSMIC_FALL;
+        color: $WHITE;
+        padding: 8px 24px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}

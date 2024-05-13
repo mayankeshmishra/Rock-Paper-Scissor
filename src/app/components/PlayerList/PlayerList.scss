@@ -1,0 +1,12 @@
+.player-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 36px;
+    gap: 12px;
+
+    &__title {
+        color: $WHITE;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+}
