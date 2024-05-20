@@ -1,0 +1,13 @@
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $PALE_LAVENDER_SWEET;
+  min-height: 25rem;
+  border-radius: 0.5rem;
+
+  &__text {
+    color: $PALE_LAVENDER_SWEET;
+    font-size: 2rem;
+  }
+}

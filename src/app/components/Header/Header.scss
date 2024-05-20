@@ -1,32 +1,41 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.375rem 1rem;
+  background-color: $WHITE;
+
+  &__logo-wrapper {
+    width: 100px;
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+  &__links {
     display: flex;
-    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1rem;
     align-items: center;
-    padding: 6px 16px;
-    background-color: $WHITE;
+  }
 
-    &__logo-wrapper {
-        width: 100px;
+  &__link {
+    text-decoration: none;
+    color: $COSMIC_FALL;
+
+    &--active {
+      font-weight: 700;
     }
+  }
 
-    &__logo {
-        max-width: 100%;
-    }
-
-    &__links {
-        display: flex;
-        list-style: none;
-        gap: 16px;
-        font-size: 1.5rem;
-    }
-    
-    &__link {
-        text-decoration: none;
-        color: $COSMIC_FALL;
-
-        &--active {
-            font-weight: 700;
-        }
-
-    }
+  &__action {
+    padding: 0.5rem 2rem;
+    color: $WHITE;
+    background-color: $COSMIC_FALL;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
 }

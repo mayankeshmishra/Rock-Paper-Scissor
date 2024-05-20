@@ -1,22 +1,30 @@
 .player-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $WHITE;
-    padding: 12px 24px;
-    width: 100%;
-    border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $WHITE;
+  padding: 0.75rem 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
 
-    &__name {
-        font-size: 20px;
-    }
+  &__name {
+    font-size: 1.25rem;
+  }
 
-    &__action {
-        background-color: $COSMIC_FALL;
-        color: $WHITE;
-        padding: 8px 24px;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-    }
+  &__score {
+    font-size: 1.25rem;
+  }
+
+  &__action {
+    background-color: $COSMIC_FALL;
+    color: $WHITE;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+
+  &--highlighted {
+    background-color: $PUMPKIN_YELLOW;
+  }
 }

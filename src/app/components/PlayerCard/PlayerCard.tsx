@@ -1,18 +1,47 @@
-import React from 'react';
+import React from "react";
 
-import './PlayerCard.scss';
+import { useSelector } from "react-redux";
+
+import { AppState } from "@State/store";
+import { inviteUser } from "@Utils/gameInviteService";
+import { User } from "@Models/userModel";
+
+import "./PlayerCard.scss";
 
 interface PlayerCardProps {
-    name: string;
+  player: User;
+  showScore: boolean;
+  isHighlighted?: boolean;
 }
 
-const PlayerCard: React.FC<PlayerCardProps> = ({name}) => {
-    return (
-    <div  className="player-card">
-        <h3 className="player-card__name">{name}</h3>
-        <button className='player-card__action'>Invite</button>
+const PlayerCard: React.FC<PlayerCardProps> = ({
+  player,
+  showScore,
+  isHighlighted,
+}) => {
+  const currentUser = useSelector((state: AppState) => state.currentUser);
+
+  /**
+   * To invite user for a game
+   */
+  const handleGameInvite = () => {
+    inviteUser(currentUser, player, false);
+  };
+
+  return (
+    <div
+      className={`player-card ${isHighlighted && "player-card--highlighted"}`}
+    >
+      <h3 className="player-card__name">{player.name}</h3>
+      {showScore ? (
+        <p className="player-card__score"> {player.score}</p>
+      ) : (
+        <button className="player-card__action" onClick={handleGameInvite}>
+          Invite
+        </button>
+      )}
     </div>
-    );
-}
+  );
+};
 
 export default PlayerCard;

@@ -5,9 +5,12 @@
         "@Src/*": ["./src/*"],
         "@Components/*": ["./src/app/components/*"],
         "@Layouts/*": ["./src/app/layouts/*"],
-        "@Hooks/*": ["./src/hooks/*"],
+        "@Routes/*": ["./src/app/routes/*"],
         "@Images/*": ["./src/assets/images/*"],
-        "@Constants/*": ["./src/constants/*"]
+        "@Constants/*": ["./src/constants/*"],
+        "@State/*": ["./src/app/state/*"],
+        "@Utils/*": ["./src/app/utils/*"],
+        "@Models/*": ["./src/app/models/*"]
       }
     }
   }
