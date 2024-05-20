@@ -17,7 +17,7 @@ const PlayerList: React.FC = () => {
   return (
     <div className="player-list">
       <h1 className="player-list__title">Players Online</h1>
-      {registeredPlayers.length ? (
+      {registeredPlayers.length > 1 ? (
         registeredPlayers
           .filter((player) => player.name !== currentUser.name)
           .map((player) => (
