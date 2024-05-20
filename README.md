@@ -4,11 +4,13 @@
 
 1. Clone the Project by running the command
    `git clone https://github.com/mayankeshmishra/rock-paper-scissor.git`
-2. Make sure to use the nvm version mentioned in the nvmrc file, for that run the command
+2. Checkout to develop branch by running the command
+   `git checkout develop`
+3. Make sure to use the nvm version mentioned in the nvmrc file, for that run the command
    `nvm use`
-3. Install the dependencies of the project, run the command
+4. Install the dependencies of the project, run the command
    `npm install`
-4. run the project
+5. run the project
    `npm start`
 
 ## Available Scripts
